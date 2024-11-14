@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-04T12:28:16Z" name="Git Commit Process" type="process" version="3">
+<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-14T07:42:32Z" name="Git Commit Process" type="process" version="7">
 <bns:encryptedValues/>
 <bns:description/>
 <bns:object>
 <process allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
 <shapes>
-<shape image="start" name="shape1" shapetype="start" userlabel="Start" x="96.0" y="94.0">
+<shape image="start" name="shape1" shapetype="start" userlabel="Start" x="32.0" y="110.0">
 <configuration>
 <noaction/>
 </configuration>
 <dragpoints>
-<dragpoint name="shape1.dragpoint1" toShape="shape2" x="240.0" y="104.0"/>
+<dragpoint name="shape1.dragpoint1" toShape="shape2" x="112.0" y="120.0"/>
 </dragpoints>
 </shape>
-<shape image="documentproperties_icon" name="shape2" shapetype="documentproperties" userlabel="Set GitHub Repo details" x="256.0" y="96.0">
+<shape image="documentproperties_icon" name="shape2" shapetype="documentproperties" userlabel="Set GitHub Repo details" x="128.0" y="112.0">
 <configuration>
 <documentproperties>
 <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Document Property - GIT URL" persist="false" propertyId="dynamicdocument.GIT URL" shouldEncrypt="false">
@@ -26,22 +26,22 @@
 </documentproperties>
 </configuration>
 <dragpoints>
-<dragpoint name="shape2.dragpoint1" toShape="shape3" x="384.0" y="104.0"/>
+<dragpoint name="shape2.dragpoint1" toShape="shape3" x="288.0" y="120.0"/>
 </dragpoints>
 </shape>
-<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notify New Commit" x="400.0" y="96.0">
+<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notifying New GitHub Commit" x="304.0" y="112.0">
 <configuration>
-<notify disableEvent="true" enableUserLog="false" perExecution="true" title="">
+<notify disableEvent="true" enableUserLog="false" perExecution="true" title="Notification for Github">
 <notifyMessage>New Commit notification.</notifyMessage>
 <notifyMessageLevel>INFO</notifyMessageLevel>
 <notifyParameters/>
 </notify>
 </configuration>
 <dragpoints>
-<dragpoint name="shape3.dragpoint1" toShape="shape7" x="528.0" y="104.0"/>
+<dragpoint name="shape3.dragpoint1" toShape="shape15" x="944.0" y="88.0"/>
 </dragpoints>
 </shape>
-<shape image="stop_icon" name="shape7" shapetype="stop" x="544.0" y="96.0">
+<shape image="stop_icon" name="shape15" shapetype="stop" userlabel="Stop" x="960.0" y="80.0">
 <configuration>
 <stop continue="true"/>
 </configuration>
