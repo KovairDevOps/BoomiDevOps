@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-14T07:42:32Z" name="Git Commit Process" type="process" version="7">
+<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-14T08:58:55Z" name="Git Commit Process" type="process" version="8">
 <bns:encryptedValues/>
 <bns:description/>
 <bns:object>
@@ -38,7 +38,44 @@
 </notify>
 </configuration>
 <dragpoints>
-<dragpoint name="shape3.dragpoint1" toShape="shape15" x="944.0" y="88.0"/>
+<dragpoint name="shape3.dragpoint1" toShape="shape11" x="400.0" y="24.0"/>
+</dragpoints>
+</shape>
+<shape image="changedatacapture_icon" name="shape11" shapetype="changedatacapture" userlabel="" x="416.0" y="16.0">
+<configuration>
+<changedatacapture profileId="efc66442-5e7a-4947-bf38-51a578bccffa" profileType="xml">
+<KeyColumn index="1" name="element (element)"/>
+</changedatacapture>
+</configuration>
+<dragpoints>
+<dragpoint identifier="Add" name="shape11.dragpoint1" text="Add" toShape="shape14" x="560.0" y="24.0"/>
+<dragpoint identifier="Update" name="shape11.dragpoint2" text="Update" toShape="shape13" x="592.0" y="264.0"/>
+<dragpoint identifier="Delete" name="shape11.dragpoint3" text="Delete" toShape="unset" x="672.0" y="66.0"/>
+</dragpoints>
+</shape>
+<shape image="notify_icon" name="shape13" shapetype="notify" userlabel="Change Notification" x="608.0" y="256.0">
+<configuration>
+<notify disableEvent="true" enableUserLog="false" perExecution="true" title="">
+<notifyMessage>Change Detected</notifyMessage>
+<notifyMessageLevel>INFO</notifyMessageLevel>
+<notifyParameters/>
+</notify>
+</configuration>
+<dragpoints>
+<dragpoint name="shape13.dragpoint1" toShape="shape15" x="944.0" y="88.0"/>
+</dragpoints>
+</shape>
+<shape image="programcmd_icon" name="shape14" shapetype="programcmd" userlabel="Script Command for Addition" x="576.0" y="16.0">
+<configuration>
+<programcmd perExecution="true">
+<configuration valueType="command">
+<commandparameter command="Select script from db.abc"/>
+</configuration>
+<parameters/>
+</programcmd>
+</configuration>
+<dragpoints>
+<dragpoint name="shape14.dragpoint1" toShape="shape15" x="944.0" y="88.0"/>
 </dragpoints>
 </shape>
 <shape image="stop_icon" name="shape15" shapetype="stop" userlabel="Stop" x="960.0" y="80.0">
