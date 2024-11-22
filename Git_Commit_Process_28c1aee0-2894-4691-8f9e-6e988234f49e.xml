@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-22T14:00:19Z" name="Git Commit Process" type="process" version="18">
+<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-22T14:39:53Z" name="Git Commit Process" type="process" version="19">
 <bns:encryptedValues/>
 <bns:description/>
 <bns:object>
@@ -29,7 +29,7 @@
 <dragpoint name="shape2.dragpoint1" toShape="shape3" x="288.0" y="120.0"/>
 </dragpoints>
 </shape>
-<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notifying New GitHub Commit for Demo" x="304.0" y="112.0">
+<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notifying New GitHub Commit" x="304.0" y="112.0">
 <configuration>
 <notify disableEvent="true" enableUserLog="false" perExecution="true" title="Notification for Github">
 <notifyMessage>New Commit notification.</notifyMessage>
