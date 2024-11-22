@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-21T04:14:26Z" name="Git Commit Process" type="process" version="9">
+<bns:Component xmlns:bns="http://api.platform.boomi.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" branchId="QjozNjcxNTA" branchName="main" componentId="28c1aee0-2894-4691-8f9e-6e988234f49e" createdBy="debasishp@kovair.com" createdDate="2024-11-04T10:44:22Z" currentVersion="true" deleted="false" folderFullPath="Kovair Software Inc./Process Library" folderId="Rjo0ODA4MTUx" folderName="Process Library" modifiedBy="debasishp@kovair.com" modifiedDate="2024-11-22T05:39:34Z" name="Git Commit Process" type="process" version="10">
 <bns:encryptedValues/>
 <bns:description/>
 <bns:object>
 <process allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
 <shapes>
-<shape image="start" name="shape1" shapetype="start" userlabel="Start" x="32.0" y="110.0">
+<shape image="start" name="shape1" shapetype="start" userlabel="Start" x="96.0" y="94.0">
 <configuration>
 <noaction/>
 </configuration>
 <dragpoints>
-<dragpoint name="shape1.dragpoint1" toShape="shape2" x="112.0" y="120.0"/>
+<dragpoint name="shape1.dragpoint1" toShape="shape2" x="240.0" y="104.0"/>
 </dragpoints>
 </shape>
-<shape image="documentproperties_icon" name="shape2" shapetype="documentproperties" userlabel="Set GitHub Repo details" x="128.0" y="112.0">
+<shape image="documentproperties_icon" name="shape2" shapetype="documentproperties" userlabel="Set GitHub Repo details" x="256.0" y="96.0">
 <configuration>
 <documentproperties>
 <documentproperty defaultValue="" isDynamicCredential="false" isTradingPartner="false" name="Dynamic Document Property - GIT URL" persist="false" propertyId="dynamicdocument.GIT URL" shouldEncrypt="false">
@@ -26,47 +26,33 @@
 </documentproperties>
 </configuration>
 <dragpoints>
-<dragpoint name="shape2.dragpoint1" toShape="shape3" x="288.0" y="120.0"/>
+<dragpoint name="shape2.dragpoint1" toShape="shape3" x="384.0" y="104.0"/>
 </dragpoints>
 </shape>
-<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notifying New GitHub Commit" x="304.0" y="112.0">
+<shape image="notify_icon" name="shape3" shapetype="notify" userlabel="Notify New Commit" x="400.0" y="96.0">
 <configuration>
-<notify disableEvent="true" enableUserLog="false" perExecution="true" title="Notification for Github">
+<notify disableEvent="true" enableUserLog="false" perExecution="true" title="">
 <notifyMessage>New Commit notification.</notifyMessage>
 <notifyMessageLevel>INFO</notifyMessageLevel>
 <notifyParameters/>
 </notify>
 </configuration>
 <dragpoints>
-<dragpoint name="shape3.dragpoint1" toShape="shape11" x="400.0" y="24.0"/>
+<dragpoint name="shape3.dragpoint1" toShape="shape5" x="528.0" y="104.0"/>
 </dragpoints>
 </shape>
-<shape image="changedatacapture_icon" name="shape11" shapetype="changedatacapture" userlabel="" x="416.0" y="16.0">
+<shape image="message_icon" name="shape5" shapetype="message" userlabel="Send Message" x="544.0" y="96.0">
 <configuration>
-<changedatacapture profileId="efc66442-5e7a-4947-bf38-51a578bccffa" profileType="xml">
-<KeyColumn index="1" name="element (element)"/>
-</changedatacapture>
+<message combined="false">
+<msgTxt>Send message to stakeholders</msgTxt>
+<msgParameters/>
+</message>
 </configuration>
 <dragpoints>
-<dragpoint identifier="Add" name="shape11.dragpoint1" text="Add" toShape="shape14" x="560.0" y="24.0"/>
-<dragpoint identifier="Update" name="shape11.dragpoint2" text="Update" toShape="unset" x="592.0" y="264.0"/>
-<dragpoint identifier="Delete" name="shape11.dragpoint3" text="Delete" toShape="unset" x="672.0" y="66.0"/>
+<dragpoint name="shape5.dragpoint1" toShape="shape6" x="672.0" y="104.0"/>
 </dragpoints>
 </shape>
-<shape image="programcmd_icon" name="shape14" shapetype="programcmd" userlabel="Script Command for Addition" x="576.0" y="16.0">
-<configuration>
-<programcmd perExecution="true">
-<configuration valueType="command">
-<commandparameter command="Select script from db.abc"/>
-</configuration>
-<parameters/>
-</programcmd>
-</configuration>
-<dragpoints>
-<dragpoint name="shape14.dragpoint1" toShape="shape15" x="944.0" y="88.0"/>
-</dragpoints>
-</shape>
-<shape image="stop_icon" name="shape15" shapetype="stop" userlabel="Stop" x="960.0" y="80.0">
+<shape image="stop_icon" name="shape6" shapetype="stop" x="688.0" y="96.0">
 <configuration>
 <stop continue="true"/>
 </configuration>
